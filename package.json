@@ -1,0 +1,15 @@
+{
+  "name": "codevigil",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CodeVigil — Protect web3 developers from code-based scams, social engineering attacks, and malicious packages.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
