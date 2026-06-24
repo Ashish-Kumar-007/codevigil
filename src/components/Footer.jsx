@@ -15,7 +15,7 @@ export default function Footer() {
           <Link to="/" className="hover:text-white transition-colors">Home</Link>
           <Link to="/dashboard" className="hover:text-white transition-colors">Dashboard</Link>
           <a href="https://github.com/Ashish-Kumar-007/codevigil" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
-          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+          <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
         </div>
       </div>
       <div className="mt-8 text-sm text-slate-500">
