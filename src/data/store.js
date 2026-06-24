@@ -11,6 +11,7 @@ const KEYS = {
   MSG_HISTORY: 'codevigil_msg_history',
   STATS: 'codevigil_stats',
   INITIALIZED: 'codevigil_initialized',
+  USER: 'codevigil_user',
 };
 
 /* ============ Helpers ============ */
@@ -154,6 +155,22 @@ export const MessageHistoryStore = {
     write(KEYS.MSG_HISTORY, history);
     return entry;
   },
+};
+
+/* ============ Auth ============ */
+
+export const AuthStore = {
+  getUser() {
+    return read(KEYS.USER);
+  },
+  login(username, isWallet = false) {
+    const user = { username, isWallet, loggedInAt: new Date().toISOString() };
+    write(KEYS.USER, user);
+    return user;
+  },
+  logout() {
+    localStorage.removeItem(KEYS.USER);
+  }
 };
 
 /* ============ Stats ============ */

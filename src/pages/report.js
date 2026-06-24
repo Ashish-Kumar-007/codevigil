@@ -3,7 +3,7 @@
  * Multi-step form with progress indicator
  */
 
-import { ReportStore } from '../data/store.js';
+import { ReportStore, AuthStore } from '../data/store.js';
 import { showToast } from '../components/toast.js';
 import { SCAM_TYPES } from '../data/seedData.js';
 
@@ -26,6 +26,18 @@ const STEPS = [
 ];
 
 export function renderReportPage() {
+  const user = AuthStore.getUser();
+  if (!user) {
+    return `
+      <div class="page-enter text-center" id="report-page" style="padding: 100px 20px;">
+        <div style="font-size: 4rem; margin-bottom: 24px;">🔒</div>
+        <h1 class="heading-lg mb-sm">Authentication Required</h1>
+        <p class="text-secondary mb-lg">You must be logged in to submit a scam report to the community database.</p>
+        <button class="btn btn--primary btn--lg" onclick="window.__openAuthModal()">Sign In to Report</button>
+      </div>
+    `;
+  }
+
   currentStep = 0;
   formData = {
     type: '',
