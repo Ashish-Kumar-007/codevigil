@@ -144,10 +144,10 @@ export default function Dashboard() {
               <ShieldAlert className="w-24 h-24 text-[#00f0ff]" />
             </div>
             <h3 className="text-lg font-bold text-white mb-2 relative z-10">Protect Your Workspace</h3>
-            <p className="text-sm text-slate-400 mb-4 relative z-10">Install our CLI tool to automatically scan your npm dependencies before they execute post-install scripts.</p>
-            <Button variant="outline" className="w-full border-white/20 text-white hover:bg-white/10 relative z-10">
-              Coming Soon
-            </Button>
+            <p className="text-sm text-slate-400 mb-4 relative z-10">Scan your npm dependencies for malicious post-install scripts before they execute.</p>
+            <div className="bg-black/40 rounded-lg p-3 border border-white/10 relative z-10">
+              <code className="text-xs text-[#00fa88] font-mono">npx codevigil scan</code>
+            </div>
           </Card>
         </div>
 
