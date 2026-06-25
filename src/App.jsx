@@ -9,6 +9,8 @@ import ReportPage from './pages/Report.jsx';
 import DatabasePage from './pages/Database.jsx';
 import AnalyzePage from './pages/Analyze.jsx';
 import Privacy from './pages/Privacy.jsx';
+import DocsPage from './pages/Docs.jsx';
+import ContactPage from './pages/Contact.jsx';
 
 export default function App() {
   const location = useLocation();
@@ -26,6 +28,8 @@ export default function App() {
           <Route path="/database" element={<DatabasePage />} />
           <Route path="/analyze" element={<AnalyzePage />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/docs" element={<DocsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
       <Footer />

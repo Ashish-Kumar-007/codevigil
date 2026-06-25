@@ -13,6 +13,7 @@ export default function Navbar() {
     { path: '/report', label: 'Report Scam' },
     { path: '/database', label: 'Database' },
     { path: '/analyze', label: 'Analyze Msg' },
+    { path: '/docs', label: 'CLI Docs' },
   ];
 
   return (
