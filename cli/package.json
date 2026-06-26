@@ -1,10 +1,21 @@
 {
-  "name": "codevigil",
+  "name": "@ashish-kumar-007/codevigil",
   "version": "1.0.0",
   "description": "Scan npm dependencies for malicious postinstall scripts, obfuscated payloads, and known threat patterns before they execute.",
   "main": "bin/codevigil.js",
   "bin": {
     "codevigil": "bin/codevigil.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashish-Kumar-007/codevigil.git"
   },
   "keywords": [
     "security",
