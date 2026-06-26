@@ -1,5 +1,5 @@
 {
-  "name": "@ashish-kumar-007/codevigil",
+  "name": "@ashishksahoo/codevigil",
   "version": "1.0.0",
   "description": "Scan npm dependencies for malicious postinstall scripts, obfuscated payloads, and known threat patterns before they execute.",
   "main": "bin/codevigil.js",

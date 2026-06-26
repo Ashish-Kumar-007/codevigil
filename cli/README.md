@@ -18,13 +18,13 @@ Part of the **CodeVigil** ecosystem.
 Install the package globally using npm:
 
 ```bash
-npm install -g @ashish-kumar-007/codevigil
+npm install -g @ashishksahoo/codevigil
 ```
 
 Or run it directly without installing via `npx`:
 
 ```bash
-npx @ashish-kumar-007/codevigil <command> [options]
+npx @ashishksahoo/codevigil <command> [options]
 ```
 
 ---
@@ -83,7 +83,7 @@ jobs:
         run: npm install
 
       - name: Run CodeVigil Scan
-        run: npx @ashish-kumar-007/codevigil scan
+        run: npx @ashishksahoo/codevigil scan
 ```
 
 ## 📄 License

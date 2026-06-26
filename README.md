@@ -47,17 +47,17 @@ You can run the scanner locally on any Node.js project without installing it glo
 
 ```bash
 # Quick scan (checks scripts & node_modules structure)
-npx codevigil scan
+npx @ashishksahoo/codevigil scan
 
 # Deep audit (analyzes actual JS files referenced by scripts)
-npx codevigil audit
+npx @ashishksahoo/codevigil audit
 ```
 
 **CI/CD Integration:**
 You can easily drop CodeVigil into GitHub Actions. It will exit with code `1` if threats are found, blocking malicious code from deploying.
 ```yaml
 - name: Security Audit
-  run: npx codevigil scan --json
+  run: npx @ashishksahoo/codevigil scan --json
 ```
 
 ---
